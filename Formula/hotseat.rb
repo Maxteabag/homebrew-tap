@@ -5,21 +5,21 @@
 class Hotseat < Formula
   desc "Terminal dashboard and CLI for Claude Code and Codex accounts, their quota, and work a usage limit stopped"
   homepage "https://github.com/Maxteabag/hotseat"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Maxteabag/hotseat/releases/download/v0.2.1/hotseat_0.2.1_darwin_amd64.tar.gz"
-      sha256 "6c8f10536dba785212e562a7dd8828d11a78232b948dbf5498ade4c6e61b713b"
+      url "https://github.com/Maxteabag/hotseat/releases/download/v0.3.0/hotseat_0.3.0_darwin_amd64.tar.gz"
+      sha256 "42864a2ff93407bb0e222aeffcf80d6e6073980d2db724b9a058cb77ee362669"
 
       define_method(:install) do
         bin.install "hotseat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Maxteabag/hotseat/releases/download/v0.2.1/hotseat_0.2.1_darwin_arm64.tar.gz"
-      sha256 "60e38a88327be1b40aa664969674a2fb0f8467411e19dddf1121c0222662e346"
+      url "https://github.com/Maxteabag/hotseat/releases/download/v0.3.0/hotseat_0.3.0_darwin_arm64.tar.gz"
+      sha256 "0c73bdcdde4d45312313ea16579d5c18c47ff6e5c61c7da666fffbaa6d9c8a0b"
 
       define_method(:install) do
         bin.install "hotseat"
@@ -29,15 +29,15 @@ class Hotseat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Maxteabag/hotseat/releases/download/v0.2.1/hotseat_0.2.1_linux_amd64.tar.gz"
-      sha256 "936d455881f856727a3d305c3775f6e17d20ed160930869d3cecb1bde7fe0ada"
+      url "https://github.com/Maxteabag/hotseat/releases/download/v0.3.0/hotseat_0.3.0_linux_amd64.tar.gz"
+      sha256 "5b8f50d6ff2d8289a4ba96ff1004a58e4e986836e36276747aae6b03f91021c4"
       define_method(:install) do
         bin.install "hotseat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Maxteabag/hotseat/releases/download/v0.2.1/hotseat_0.2.1_linux_arm64.tar.gz"
-      sha256 "1299c45965636a24e562da662f0361718a2543567b59ad873ea63d5ab6a1b5b3"
+      url "https://github.com/Maxteabag/hotseat/releases/download/v0.3.0/hotseat_0.3.0_linux_arm64.tar.gz"
+      sha256 "9b2790c79494483613aa54ff170a2c40ca1fcd776527771ab26837690ad925e2"
       define_method(:install) do
         bin.install "hotseat"
       end
